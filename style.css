@@ -60,25 +60,25 @@ header{
   border-bottom:1px solid var(--line);
   position:relative;
   display:flex;
-  align-items:flex-start;
+  align-items:center;
   justify-content:space-between;
-  gap:36px;
+  gap:44px;
 }
 .head-text{flex:1;min-width:0}
 .photo{
   flex-shrink:0;
-  width:128px;height:128px;
-  border-radius:3px;
-  border:1px solid var(--line);
+  width:170px;height:170px;
+  border-radius:4px;
+  border:1px solid #16161a40;
   background:var(--bg);
   object-fit:cover;
   display:block;
-  box-shadow:0 14px 28px -18px #16161a55;
+  box-shadow:0 22px 42px -18px #16161a80, 0 0 0 6px var(--paper);
 }
 .photo-frame{
   flex-shrink:0;
-  width:128px;height:128px;
-  border-radius:3px;
+  width:170px;height:170px;
+  border-radius:4px;
   border:1px solid var(--line);
   background:
     repeating-linear-gradient(45deg,var(--bg),var(--bg) 9px,#16161a08 9px,#16161a08 18px);
