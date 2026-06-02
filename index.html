@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--
-  oie! se você chegou até aqui fuçando o código, seja bem-vindo(a) :)
-  isso aqui foi feito com café, teimosia e um carinho danado.
--->
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -19,12 +15,12 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="sheet">
+  <div class="sheet" id="sheet">
 
     <div class="topbar">
       <span class="fname">yago-barbosa-dini / curriculo</span>
       <div class="controls">
-        <button class="ctrl" id="pdfBtn" aria-label="Salvar em PDF" title="Salvar em PDF">
+        <button class="ctrl" id="pdfBtn" aria-label="Baixar em PDF" title="Baixar em PDF">
           <svg viewBox="0 0 24 24"><path d="M12 3v12M8 11l4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
         </button>
       </div>
@@ -33,7 +29,6 @@
     <header>
       <div class="head-text">
         <span class="tag">Currículo</span>
-        <!-- esse nome gigante aí embaixo sou eu \o/ -->
         <h1>Yago <span class="accent">Barbosa</span> Dini</h1>
         <p class="role">// Desenvolvedor em formação · Estudante de Análise e Desenvolvimento de Sistemas</p>
         <div class="contacts">
@@ -58,7 +53,7 @@
 
       <img class="photo" src="foto.jpeg" alt="Yago Barbosa Dini"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-      <div class="photo-frame" style="display:none"><span class="plus">+</span>YAGOINHA<br></div>
+      <div class="photo-frame" style="display:none"><span class="plus">+</span>Sua foto<br>aqui</div>
     </header>
 
     <section>
@@ -184,7 +179,7 @@
 
   </div>
 </div>
-<!-- chegou no fim e ainda tá lendo? você é gente boa. obrigado por passar por aqui :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
