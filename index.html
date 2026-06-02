@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--
+  oie! se você chegou até aqui fuçando o código, seja bem-vindo(a) :)
+  isso aqui foi feito com café, teimosia e um carinho danado.
+-->
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -10,7 +14,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script>
-  // Marca que o JS está ativo (usado pela animação de revelação no scroll).
   document.documentElement.classList.add('js');
 </script>
 </head>
@@ -30,6 +33,7 @@
     <header>
       <div class="head-text">
         <span class="tag">Currículo</span>
+        <!-- esse nome gigante aí embaixo sou eu \o/ -->
         <h1>Yago <span class="accent">Barbosa</span> Dini</h1>
         <p class="role">// Desenvolvedor em formação · Estudante de Análise e Desenvolvimento de Sistemas</p>
         <div class="contacts">
@@ -52,11 +56,9 @@
         </div>
       </div>
 
-      <!-- FOTO DE PERFIL:
-           Coloque sua imagem (ex.: foto.jpg) na raiz do repositório e troque
-           o bloco .photo-frame abaixo por:
-           <img class="photo" src="foto.jpg" alt="Yago Barbosa Dini"> -->
-      <div class="photo-frame"><span class="plus">+</span>Sua foto<br>aqui</div>
+      <img class="photo" src="foto.jpg" alt="Yago Barbosa Dini"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <div class="photo-frame" style="display:none"><span class="plus">+</span>Sua foto<br>aqui</div>
     </header>
 
     <section>
@@ -182,6 +184,7 @@
 
   </div>
 </div>
+<!-- chegou no fim e ainda tá lendo? você é gente boa. obrigado por passar por aqui :) -->
 <script src="script.js"></script>
 </body>
 </html>
