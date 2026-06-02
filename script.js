@@ -1,8 +1,30 @@
 (function () {
   var pdfBtn = document.getElementById('pdfBtn');
+  var hint = document.getElementById('pdfHint');
+  var okBtn = document.getElementById('pdfOk');
+  var cancelBtn = document.getElementById('pdfCancel');
+
+  function abrirHint() { if (hint) hint.hidden = false; }
+  function fecharHint() { if (hint) hint.hidden = true; }
+
   if (pdfBtn) {
-    pdfBtn.addEventListener('click', function () {
-      window.print();
+    pdfBtn.addEventListener('click', abrirHint);
+  }
+  if (cancelBtn) {
+    cancelBtn.addEventListener('click', fecharHint);
+  }
+  if (okBtn) {
+    okBtn.addEventListener('click', function () {
+      fecharHint();
+      setTimeout(function () { window.print(); }, 120);
+    });
+  }
+  if (hint) {
+    hint.addEventListener('click', function (e) {
+      if (e.target === hint) fecharHint();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') fecharHint();
     });
   }
 
